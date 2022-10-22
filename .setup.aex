@@ -1,0 +1,66 @@
+#Tool: MyCat
+#Version 1.0.0.
+#Artist & designer: Isack Philiph
+
+import sys
+import os
+from time import sleep
+from base.system import *
+
+class cat(object):
+  def pre(self):
+    if os.path.exists(bpath+"meow") or os.path.exists(spath+"MyCat"):
+      if system=="ubuntu":
+        os.system("sudo rm -rf "+spath+"MyCat && rm -rf "+bpath+"meow")
+       # os.system("cd "+spath+" && sudo rm -rf ####################")
+      else:
+        os.system("rm -rf "+spath+"MyCat && rm -rf "+bpath+"meow")
+       # os.system("cd "+spath+" && rm -rf #########")
+
+  def setup(self):
+    self.pre()
+    if system=="ubuntu":
+      #Install MyCat in UBUNTU
+      print("\n\033[01;33m\007MyCat installing…\n")
+      os.system("sudo mkdir "+spath+"MyCat")
+     # os.system("sudo mv -v base/meow "+bpath)
+      os.system("sudo mv -v base Meow.py .Meow.py LICENSE "+spath+"MyCat")
+      os.system("sudo chmod +x "+bpath+"meow")
+      os.system("sudo chmod +x "+spath+"MyCat/base/* ")
+      os.system("cd .. && sudo rm -rf MyCat")
+      sleep(1)
+      print("\n\033[01;33m\007   [\033[01;31m+\033[01;33m] \033[01;32mInstalled MyCat v1.0.0.")
+      print("\033[01;33m   [\033[01;31m+\033[01;33m] \033[01;32m  Type :- \033[01;33mmycat --help \033[01;32mfor more information.\033[00m\n")
+
+    else:
+      print("\nMyCat is being installed...\n")
+      os.system("mkdir "+spath+"MyCat")
+      os.system("mv -v base/meow "+bpath)
+      os.system("mv -v  base Meow.py .Meow.py LICENSE "+spath+"MyCat")
+      os.system("chmod +x "+bpath+"meow")
+      os.system("chmod +x "+spath+"MyCat/*")
+      os.system("chmod +x "+spath+"MyCat/base/*")
+      os.system("cd .. && rm -rf MyCat")
+      os.system("clear")
+      print("\n\n          .")
+      sleep(1.4)
+      os.system("clear")
+      print("\n\n         ..")
+      sleep(1.3)
+      os.system("cd")
+      os.system("clear")
+      print("\n\n         ...")
+      sleep(2)
+      os.system("clear")
+      print("\n     \033[0;31mMyCat Installed successfully!\033[00m")
+      print("     Type >>\033[01;33mmeow help\033[00m")
+      print("       -for more information.\n")
+      print("\n")
+
+
+def Meaw():
+  try:
+    cat().setup()
+  except KeyboardInterrupt:
+    exit()
+Meaw()
