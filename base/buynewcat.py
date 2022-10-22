@@ -13,9 +13,12 @@ class update(object):
       if askv == "n" or askv == "N":
         break
       elif askv == "Y" or askv == "y":
+        os.system("clear")
         print("\n\033[01;32mUpdating a Cat..............\033[01;36m")
         if os.path.exists(bpath+"git"):
-          
+          sleep(1.3)
+          os.system("clear")
+          print("Updating...")
         else:
           os.system(pac+" update")
           os.system(pac+" install git -y")
