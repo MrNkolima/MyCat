@@ -28,10 +28,10 @@ class update(object):
           os.system("cd "+home+" && git clone https://github.com/MrNkolima/MyCat.git && cd MyCat && chmod +x install && sh install")
         if os.path.exists(home+"MyCat"):
           os.system("cd "+home+"MyCat && sh install") 
-          print("\033[01;32mThe cat is updated!, Test him!!\033[00m")
           break
         else:
-          sleep(4)
+          sleep(0.1)
+          print("\033[01;32mThe cat is updated!, Test him!!\033[00m")
           break
       else:
         print("\n \033[01;31m\007Meowwwwwwww::: I can\'t understand:: \033[01;32m \'"+askv+"\'")
