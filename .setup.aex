@@ -23,8 +23,8 @@ class cat(object):
       #Install MyCat in UBUNTU
       print("\n\033[01;33m\007MyCat installing…\n")
       os.system("sudo mkdir "+spath+"MyCat")
-     # os.system("sudo mv -v base/meow "+bpath)
-      os.system("sudo mv -v base Meow.py .Meow.py LICENSE "+spath+"MyCat")
+     # os.system("sudo mv base/meow "+bpath)
+      os.system("sudo mv base Meow.py .Meow.py LICENSE "+spath+"MyCat")
       os.system("sudo chmod +x "+bpath+"meow")
       os.system("sudo chmod +x "+spath+"MyCat/base/* ")
       os.system("cd .. && sudo rm -rf MyCat")
@@ -35,9 +35,10 @@ class cat(object):
     else:
       print("\nMyCat is being installed...\n")
       os.system("mkdir "+spath+"MyCat")
-      os.system("mv -v base/meow "+bpath)
-      os.system("mv -v  base Meow.py .Meow.py LICENSE "+spath+"MyCat")
+      os.system("mv base/meow "+bpath)
+      os.system("mv base Meow.py .Meow.py LICENSE "+spath+"MyCat")
       os.system("chmod +x "+bpath+"meow")
+      sleep(2)
       os.system("chmod +x "+spath+"MyCat/*")
       os.system("chmod +x "+spath+"MyCat/base/*")
       os.system("cd .. && rm -rf MyCat")
