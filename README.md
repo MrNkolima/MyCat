@@ -11,7 +11,7 @@ DM me via [Twitter](https://twitter.com/isack_nkolima?t=QwwAHShwRk4dlTrYl1YsXg&s
 #### Installing in one line
 
 
-    cd MyCat && chmod +x install && sh install
+    git clone https://github.com/MrNkolima/MyCat.git && cd MyCat && chmod +x install && sh install
     
  
 # HOW TO USE THIS TOOL
