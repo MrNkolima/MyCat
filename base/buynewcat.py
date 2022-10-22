@@ -31,11 +31,6 @@ class update(object):
           print("\033[01;32mThe cat is updated!, Test him!!\033[00m")
           break
         else:
-        
-          print("\n\n\033[01;37m    [+] \033[01;31mAn updated Cat be be installed!!\033[00m")
-          print("\033[01;37m    [+] \033[01;31mYou are \033[01;33mOFFLINE \033[01;31m!!!\033[00m")
-          print("\033[01;37m    [+] \033[01;31mPlease check your \033[01;33mnetwork \033[01;31mconnection !!!\033[00m")
-          print("\n\n")
           sleep(4)
           break
       else:
