@@ -24,9 +24,7 @@ class update(object):
         else:
           os.system("cd "+home+" && git clone https://github.com/MrNkolima/MyCat.git && cd MyCat && chmod +x install && sh install")
         if os.path.exists(home+"MyCat"):
-          os.system("cd "+home+"MyCat && sh install")
-          os.system("clear")
-        #  os.system("##Activation phrase")
+          os.system("cd "+home+"MyCat && sh install") 
           sys.exit()
         else:
         
