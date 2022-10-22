@@ -1,0 +1,11 @@
+#Tool: MyCat
+#Version: 1.0.0.
+#Artist & Design: Isack Philiph
+
+if [ -d /data/data/com.termux/files/usr/share/MyCat ];then
+  cd /data/data/com.termux/files/usr/share/MyCat
+  exec python3 Meow.py $@
+else
+  cd /usr/share/MyCat
+  exec python3 Meow.py $@
+fi
