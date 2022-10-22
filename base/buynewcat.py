@@ -15,7 +15,7 @@ class update(object):
       elif askv == "Y" or askv == "y":
         print("\n\033[01;32mUpdating a Cat..............\033[01;36m")
         if os.path.exists(bpath+"git"):
-          print("\033[01;32mThe cat is updated!, Test him!!\033[01;36m")
+          
         else:
           os.system(pac+" update")
           os.system(pac+" install git -y")
@@ -25,7 +25,8 @@ class update(object):
           os.system("cd "+home+" && git clone https://github.com/MrNkolima/MyCat.git && cd MyCat && chmod +x install && sh install")
         if os.path.exists(home+"MyCat"):
           os.system("cd "+home+"MyCat && sh install") 
-          sys.exit()
+          print("\033[01;32mThe cat is updated!, Test him!!\033[00m")
+          break
         else:
         
           print("\n\n\033[01;37m    [+] \033[01;31mAn updated Cat be be installed!!\033[00m")
