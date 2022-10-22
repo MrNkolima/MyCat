@@ -20,11 +20,11 @@ class update(object):
           os.system(pac+" update")
           os.system(pac+" install git -y")
         if system=="ubuntu":
-        #  os.system("cd "+home+" && sudo git clone ##Link for github")
+        #  os.system("cd "+home+" && sudo git clone https://github.com/MrNkolima/MyCat.git ")
         #remove pass
         pass
         else:
-         # os.system("cd "+home+" && git clone ##Link for GitHub")
+         # os.system("cd "+home+" && git clone https://github.com/MrNkolima/MyCat.git ")
          #remove pass
          pass
         if os.path.exists(home+"MyCat"):
